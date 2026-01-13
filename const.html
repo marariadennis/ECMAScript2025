@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables Declared with Const</title>
+  </head>
+  <body>
+    <h2>Javascript Constant</h2>
+    <p>Declaring a constant array does not make the elements unchangeable</p>
+    <p id="demo"></p>
+
+    <script>
+      //Const can be misleading and it means a constant refference to a Value
+      const cars = ["Saab", "Volvo", "Mitsubishi"];
+
+      cars[0] = "Toyota"; //Changina and Element in an Array
+
+      cars.push("Audi");
+
+      document.getElementById("demo").innerHTML = cars;
+    </script>
+  </body>
+</html>
