@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Switch Case</title>
+  </head>
+  <body>
+    <h1>Javascript Switch Case</h1>
+    <p id="demo"></p>
+    <script>
+      let text;
+      switch (new Date().getDay()) {
+        case 4:
+        case 5:
+          text = "Soon Its a Weekend";
+          break;
+        case 0:
+        case 6:
+          text = "Its a Weekend";
+          break;
+        default:
+          text = "Looking Foward to the Weekend";
+          break;
+      }
+      document.getElementById("demo").innerHTML = text;
+      //The Break Case Exits the Switch Block
+    </script>
+  </body>
+</html>
