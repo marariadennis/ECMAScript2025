@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Do .. While</title>
+  </head>
+  <body>
+    <h1>Javascript Do While</h1>
+    <p id="demo"></p>
+    <script>
+      const cars = ["BMW", "Saab", "Volvo", "Mercedes"]; //Javascript Array
+      let i = 0; //Array starts at 0
+      let text = "";
+
+      while (cars[i]) {
+        text += cars[i] + "</br>";
+        i++;
+      }
+      document.getElementById("demo").innerHTML = text; //Javascript Putput Statement
+
+      //This Code works, But i need more clarification
+    </script>
+  </body>
+</html>

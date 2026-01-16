@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Do .. While</title>
+  </head>
+  <body>
+    <h1>Do ..While Loops</h1>
+    <p id="demo"></p>
+    <script>
+      //Executes a Code Block once even though the condition may be untrue
+      let text = "";
+      let i = 0;
+      do {
+        text += "The Number is " + i + "</br>";
+        i++;
+      } while (i < 10);
+
+      document.getElementById("demo").innerHTML = text;
+    </script>
+  </body>
+</html>
