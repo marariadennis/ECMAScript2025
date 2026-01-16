@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using Continue in Javascript</title>
+  </head>
+  <body>
+    <h1>Continue Statement in Javascript</h1>
+    <p id="demo"></p>
+    <script>
+      let text = "";
+      for (let i = 1; i < 10; i++) {
+        if (i == 3) {
+          continue; //Continue Skips a Certain section of the Loop
+        }
+        text += i * 10 + "</br>"; //Break and Continue are the only Statements that help jump out of a CodeBlock or Loop
+      }
+      document.getElementById("demo").innerHTML = text;
+    </script>
+  </body>
+</html>
