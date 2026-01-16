@@ -3,16 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Javascript For Loops</title>
+    <title>While Loop</title>
   </head>
   <body>
-    <h2>Javascript For Loops</h2>
+    <h1>While Loop</h1>
     <p id="demo"></p>
     <script>
       let text = "";
+      let i = 0;
 
-      for (i = 0; i < 5; i++) {
-        text += "The Number is" + i + "</br>"; // I do not understand this Statement
+      while (i < 10) {
+        //text += "The number is " + i + "</br>";
+        text = text + "The number is " + i + "</br>";
+        i++;
       }
       document.getElementById("demo").innerHTML = text;
     </script>
